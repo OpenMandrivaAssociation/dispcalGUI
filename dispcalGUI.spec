@@ -1,5 +1,5 @@
 %define	name		dispcalGUI
-%define	version		0.8.9.3
+%define	version		1.1.2.9
 %define release		1
 
 Name:		%{name}
@@ -11,7 +11,7 @@ License:	GPLv3
 URL:		http://dispcalGUI.hoech.net
 Source0:	%{name}.tar.gz
 Requires:	wxPythonGTK argyllcms
-BuildRequires:	python-setuptools wxPythonGTK libpython-devel
+BuildRequires:	python-setuptools wxPythonGTK python-devel
 BuildRequires:	wxPythonGTK-wxversion
 BuildRequires:	pkgconfig(xxf86vm)
 BuildRequires:	pkgconfig(xinerama)
@@ -34,10 +34,12 @@ python setup.py install --prefix=/usr  --root=%{buildroot}
 %files
 %{_bindir}/*
 %{_datadir}/%{name}
-#%{_sysconfdir}/udev/rules.d/92-Argyll.rules
+%{_sysconfdir}/udev/rules.d/55-Argyll.rules
 %{_mandir}/man1/*.xz
 %{_iconsdir}/hicolor/*/*
-#%{_docdir}/%{name}-%{version}
+#% {_docdir}/%{name}-%{version}/screenshots/
+#% {_docdir}/%{name}-%{version}/theme
+%{_docdir}/%{name}-%{version}/
 
 %{py_platsitedir}/%{name}
 %{py_platsitedir}/*egg*
