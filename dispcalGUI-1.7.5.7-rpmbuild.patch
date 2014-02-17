@@ -1,0 +1,14 @@
+diff -urN dispcalGUI-1.7.5.7/dispcalGUI/setup.py dispcalGUI-1.7.5.7-patched/dispcalGUI/setup.py
+--- dispcalGUI-1.7.5.7/dispcalGUI/setup.py	2014-02-10 10:35:58.000000000 +1100
++++ dispcalGUI-1.7.5.7-patched/dispcalGUI/setup.py	2014-02-18 00:56:16.450213687 +1100
+@@ -293,9 +293,7 @@
+ 	dry_run = "-n" in sys.argv[1:] or "--dry-run" in sys.argv[1:]
+ 	help = False
+ 	install_data = None # data files install path (only if given)
+-	is_rpm_build = "bdist_rpm" in sys.argv[1:] or os.path.abspath(sys.argv[0]).endswith(
+-		os.path.join(os.path.sep, "rpm", "BUILD", name + "-" + version, 
+-		os.path.basename(os.path.abspath(sys.argv[0]))))
++	is_rpm_build = True
+ 	prefix = ""
+ 	recordfile_name = None # record installed files to this file
+ 	sdist = "sdist" in sys.argv[1:]

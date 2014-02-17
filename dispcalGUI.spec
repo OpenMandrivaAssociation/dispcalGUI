@@ -6,6 +6,7 @@ License:	GPLv3+
 Group: 		Graphics
 Url:		http://dispcalGUI.hoech.net
 Source0:	http://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{name}-%{version}.tar.gz
+Patch0:		dispcalGUI-1.7.5.7-rpmbuild.patch
 BuildRequires:	python-setuptools
 BuildRequires:	wxPythonGTK
 BuildRequires:	wxPythonGTK-wxversion
@@ -35,6 +36,7 @@ A graphical user interface for the Argyll CMS display calibration utilities.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 python setup.py build
