@@ -1,7 +1,7 @@
 Summary:	A graphical user interface for the Argyll CMS display calibration utilities
 Name:		dispcalGUI
 Version:	1.7.5.7
-Release:	1
+Release:	2
 License:	GPLv3+
 Group: 		Graphics
 Url:		http://dispcalGUI.hoech.net
