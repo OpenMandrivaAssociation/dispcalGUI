@@ -4,7 +4,7 @@ Version:	1.7.5.7
 Release:	2
 License:	GPLv3+
 Group: 		Graphics
-Url:		http://dispcalGUI.hoech.net
+Url:		https://dispcalGUI.hoech.net
 Source0:	http://sourceforge.net/projects/dispcalgui/files/release/%{version}/%{name}-%{version}.tar.gz
 Patch0:		dispcalGUI-1.7.5.7-rpmbuild.patch
 BuildRequires:	python-setuptools
